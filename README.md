@@ -5,6 +5,8 @@ ahonnan lekérdezi a JWT-t és úgy küldi a végpontnak az Authorization: Beare
 
 # Újdonságok
 Készült új navbar, ami sm-nél collapsol és toggle-gombra bejön a navigáció.
+Ehhez szükséges a bootstrap JS-része, amit az index.js-ben be kell hívni:
+import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 
 # Logout script:
 Logout-scriptet írtunk, ami kitörli a localStorage-ból a token-t.
@@ -13,4 +15,4 @@ Logout-scriptet írtunk, ami kitörli a localStorage-ból a token-t.
 Ebben a végpontban még nincs JWT érvénytartam implementálva.
 
 # Backend végpontok:
-[Backend végpont] (https://szallasjwt.sulla.hu/swagger target=_blank)
+[Backend végpont] (https://szallasjwt.sulla.hu/swagger)

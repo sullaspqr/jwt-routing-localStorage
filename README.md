@@ -11,3 +11,6 @@ Logout-scriptet írtunk, ami kitörli a localStorage-ból a token-t.
 
 # Issues:
 Ebben a végpontban még nincs JWT érvénytartam implementálva.
+
+# Backend végpontok:
+[Backend végpont] (https://szallasjwt.sulla.hu/swagger)

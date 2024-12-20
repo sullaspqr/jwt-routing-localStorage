@@ -24,15 +24,15 @@ export const App =() => {
        <ul className="navbar-nav">
        <li className="nav-item">
          <NavLink to={"/"} className={({isActive}) => "nav-link " + (isActive ? "active" : "")}>
-         <span className="nav-link">Bejelentkezés</span></NavLink>
+         Bejelentkezés</NavLink>
         </li>
         <li className="nav-item">
         <NavLink to={"/SzallasList"} className={({isActive}) => "nav-link " + (isActive ? "active" : "")}>
-        <span className="nav-link">SzallasList</span></NavLink>
+        Szállás lista</NavLink>
         </li>
         <li className="nav-item">
          <NavLink to={"/Logout"} className={({isActive}) => "nav-link " + (isActive ? "active" : "")}>
-         <span className="nav-link">Kijelentkezés</span></NavLink>
+         Kijelentkezés</NavLink>
        </li>
      </ul>
      </div>
@@ -42,6 +42,7 @@ export const App =() => {
      <Route path="/" element={<Login />} />
      <Route path="/SzallasList" element={<SzallasList />} />
      <Route path="/Logout" element={<Logout />} />
+     <Route path="*" element={<Login />} />
     </Routes>
    </Router>
   );
